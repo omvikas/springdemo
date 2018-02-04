@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "classpath://org/hibernate/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">root.123</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila</property>
+		<property name="hibernate.connection.username">home</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- For singleton factory -->
+		<!-- <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</property>
+		 -->
+
+		<mapping resource="com/om/pojo/student.hbm.xml" />
+		<!-- <mapping resource="com/om/pojo/actor.hbm.xml" /> -->
+		<mapping resource="com/om/pojo/address1-2-Many.hbm.xml" /> 
+	</session-factory>
+</hibernate-configuration>

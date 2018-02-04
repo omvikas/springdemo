@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+  
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+  
+  <hibernate-mapping>  
+  <class name="com.om.pojo.Address" table="address_local" schema='sakila'>  
+  <id name="id" column="aid"> 
+  <!-- <generator class="foreign">
+  <param name="property">student</param>
+  </generator>  -->
+  <generator class="increment"/>
+  </id>  
+  <property name="country" column="country" ></property>  
+  <property name="city" column="city"></property>  
+  <property name="street" column="street"></property>
+  <one-to-one name="student" class="com.om.pojo.Student"></one-to-one>   
+ <!-- <many-to-one name="student" class="com.om.pojo.Student" fetch="select">
+            <column name="sid"  />
+        </many-to-one> -->
+
+  
+  </class>  
+  </hibernate-mapping>  
