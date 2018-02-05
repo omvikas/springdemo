@@ -1,6 +1,6 @@
 package com.hibernate.test;
 /**
- * class descriptiondsdsadasdasdsad
+ * class descriptiondsdsadasdasdsadd
  */
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
