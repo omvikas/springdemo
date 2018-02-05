@@ -1,6 +1,10 @@
 package com.hibernate.test;
 /**
- * class descriptiondsdsadasdasdsadd
+
+ * class description
+
+ * demo git conflict
+
  */
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
